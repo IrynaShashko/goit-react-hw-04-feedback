@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/IrynaShashko/goit-react-hw-04-feedback/static/css/main.7acaea2f.css",
+    "main.js": "/IrynaShashko/goit-react-hw-04-feedback/static/js/main.774d3fb2.js",
+    "index.html": "/IrynaShashko/goit-react-hw-04-feedback/index.html",
+    "main.7acaea2f.css.map": "/IrynaShashko/goit-react-hw-04-feedback/static/css/main.7acaea2f.css.map",
+    "main.774d3fb2.js.map": "/IrynaShashko/goit-react-hw-04-feedback/static/js/main.774d3fb2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.774d3fb2.js"
+  ]
+}
