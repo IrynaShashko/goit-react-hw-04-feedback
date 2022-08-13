@@ -8,29 +8,28 @@ import {
   ButtonTag,
 } from '../Feedback/Feedback.styled';
 
-const Feedback = ({ onLeaveFeedback, options }) => (
+const Feedback = ({ goodFeedback, neutralFeedback, badFeedback }) => (
   <ContainerFeedback>
     <Header>Expresso</Header>
     <H2>Please leave feedback</H2>
     <ButtonContainer>
-      {options.map(option => (
-        <ButtonTag
-          type="button"
-          onClick={() => {
-            onLeaveFeedback(option);
-          }}
-          key={option}
-        >
-          {option}
-        </ButtonTag>
-      ))}
+      <ButtonTag type="button" onClick={goodFeedback}>
+        Good
+      </ButtonTag>
+      <ButtonTag type="button" onClick={neutralFeedback}>
+        Neutral
+      </ButtonTag>
+      <ButtonTag type="button" onClick={badFeedback}>
+        Bad
+      </ButtonTag>
     </ButtonContainer>
   </ContainerFeedback>
 );
 
 Feedback.propTypes = {
-  onLeaveFeedback: PropTypes.func.isRequired,
-  options: PropTypes.arrayOf(PropTypes.string).isRequired,
+  goodFeedback: PropTypes.func,
+  neutralFeedback: PropTypes.func,
+  badFeedback: PropTypes.func,
 };
 
 export default Feedback;
